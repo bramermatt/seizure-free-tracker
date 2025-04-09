@@ -7,6 +7,10 @@ html, body {
     /* height: 100vh; */
 }
 
+body {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+}
+
 .container {
     padding: 1em;
     max-width: 1200px;
@@ -22,7 +26,7 @@ html, body {
     .content {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         max-width: 100%;
 
         padding: 1em 0;
@@ -65,14 +69,19 @@ html, body {
     #seizure-free-tracker {
         margin-top: 1rem;
         /* text-align: center; */
-        color: white;
+        /* color: white; */
+
+        p {
+          max-width: 70%;
+        }
       }
 
       .seizure-free-name {
         font-size: 1.5rem;
         line-height: 1;
         /* font-weight: bold; */
-        color: #7a7a7a;
+        /* color: #7a7a7a; */
+        color: black;
       }
       
       .seizure-years {
@@ -95,7 +104,7 @@ html, body {
         display: flex;
         overflow-x: auto;
         /* padding: 1rem 0; */
-        gap: 1.5rem;
+        gap: 1em;
         /* border-top: 2px solid #ccc; */
         scroll-behavior: smooth;
       }
@@ -134,7 +143,7 @@ html, body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.9);
   }
   
   .modal-content {
@@ -142,7 +151,7 @@ html, body {
     margin: 10% auto;
     padding: 2rem;
     border-radius: 12px;
-    width: 80%;
+    width: 75%;
     max-width: 500px;
     /* text-align: center; */
 
